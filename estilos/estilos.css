@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+.ancho{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+}
+
+.logo{
+    width: 30%;
+    height: 100px;
+    float: left;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+}
+
+.logo p a{
+    color: red;
+    font-size: 60px;
+}
+
+.fuenteVerde{
+    color: rgb(14, 212, 14);
+    float: left;
+    height: 10px;
+    margin-left: 10px;
+}
+
+header nav{
+    width: 70%;
+    height: 70px;
+    float: left;
+    padding-top: 30px;
+    text-align: right;
+}
+
+header nav ul li{
+    display: inline; 
+
+}
+
+header nav ul li a{
+    font-size: 2rem;
+    color: #4b4849;  
+    padding-left: 15px;
+}
+
+header nav ul li a:hover{
+    color: aquamarine;
+}
+
+body{
+    font-size: 18px;
+    color: #666;
+    background-color: #fff;
+    line-height: 1.7em;
+    width: 100%;
+    background-image: url(../imagenes/04f560bb-b7ad-4bbd-955f-f5fd67e5d031.jpg);
+}
+
+main{
+    width: 60%;
+    margin: auto;
+    background-color: #fff;
+    padding: 0px 30px 30px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.tituloDeServicio{
+    font-size: 40px;
+    background-size: initial;
+    background-repeat: repeat;
+    background-image: url(https://blowdrybar.es/wp-content/uploads/2021/04/personal_stylist_29.png);
+    border-top-width: 5px;
+    border-color: #000000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 700px;
+    font-weight: 300;
+    margin: auto;
+    margin-top: 20px;
+    font-family: "Roboto";
+    line-height: 1.4em;
+}
+
+
+/* --------------------------------footer-------------------------------*/
+
+.lineaRoja{
+    padding: 1px;
+    background-color: #e5383b;
+}
+
+footer{ 
+    background-color: #4b4849;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    color: #b1a7a6;
+    font-weight: lighter;
+    line-height: normal;
+}
+
+footer a{ 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: aliceblue;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.centrado{
+    text-align: center;
+}
