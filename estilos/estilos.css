@@ -10,15 +10,24 @@ html{
 }
 
 header{
+    display: flex;
     width: 100%;
     height: 100px;
-    background-color: #fff;
+    background-color: #fff;  
+}
+
+header div{
+    display: inline;
 }
 
 .ancho{
     width: 80%;
     height: 100px;
     margin: auto;
+}
+
+.menu-bar{
+    display: none;
 }
 
 .logo{
@@ -51,9 +60,10 @@ header nav{
 }
 
 header nav ul li{
-    display: inline; 
-
+    display: inline-block; 
 }
+
+    
 
 header nav ul li a{
     font-size: 2rem;
@@ -63,6 +73,11 @@ header nav ul li a{
 
 header nav ul li a:hover{
     color: aquamarine;
+}
+
+.alineados{
+    flex-direction: row;
+    justify-content: center;
 }
 
 body{
@@ -75,32 +90,351 @@ body{
 }
 
 main{
-    width: 60%;
+    width: 1200px;
     margin: auto;
     background-color: #fff;
-    padding: 0px 30px 30px 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
-.tituloDeServicio{
+.fondoCambiado{
+    background-color: transparent;
+    background-size: cover;
+}
+
+.imagenIndex{
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    height: 900px;
+    background-image: url(../imagenes/stock-photo-blonde-girl-elegant-shiny-hairstyle.jpg);
+}
+
+/*--------------grilla de servicios----------------*/
+#grilla{
+    display: grid;
+    grid-template-areas: 
+        "corte maquillaje colora"
+        "tecnico tratamientos ."
+        ". tratamientos ."
+        ". tratamientos ."
+        ;
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: 200px 200px 200px 200px;
+    justify-items: center;
+    padding:20px 20px 0px 20px;
+    grid-column-gap: 30px;
+    text-align: left;
+}
+
+div#corte{
+    grid-area: corte;
+}
+
+div#maquillaje{
+    grid-area: maquillaje;
+}
+
+div#color{
+    grid-area: colora;
+}
+
+div#tecnico{
+    grid-area: tecnico;
+}
+
+div#tratamientos{
+    grid-area: tratamientos;
+}
+
+#grilla2{
+    display: grid;
+    grid-template-areas: 
+        ". . . . ."
+        " mapa1 mapa1 comentarioMapa1 comentarioMapa1 . "
+        " . . . . . "
+        " comentarioMapa2 comentarioMapa2 mapa2 mapa2 ."
+        " . . . . . "
+        ;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100px 300px 300px 300px 200px;
+    justify-items: center;
+    padding:50px 20px 0px 20px;
+    grid-column-gap: 30px;
+    text-align: left;
+    align-items: center;
+    background: rgb(25,25,25);
+    background: linear-gradient(180deg, rgba(25,25,25,1) 0%, rgba(181,181,181,1) 25%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+div#mapa1{
+    grid-area: mapa1;
+}
+
+div#comentarioMapa1{
+    grid-area: comentarioMapa1;
+}
+
+div#mapa2{
+    grid-area: mapa2;
+}
+
+div#comentarioMapa2{
+    grid-area: comentarioMapa2;
+}
+
+#grillaIndex{
+    display: grid;
+    grid-template-areas: 
+        " . . "
+        " . . "
+        " . . "
+        " parrafo . "
+        ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 200px 200px 300px;
+    justify-items: center;
+    padding:20px 20px 0px 20px;
+    grid-column-gap: 0px;
+    text-align: left;
+    
+}
+
+div#parrafo{
+    grid-area: parrafo;
+}
+
+#grillaFilosofia{
+    display: grid;
+    grid-template-areas: 
+        " concepto concepto "
+        " concepto2 concepto2 "
+        " queEs img1 "
+        " queEs2 img1"
+        " . . "
+        " img2 ser "
+        " img2 ser2 "
+        " . ."
+        ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 200px 200px 500px 200px 200px 500px 100px;
+    justify-items: center;
+    padding:20px 20px 0px 20px;
+    text-align: center;
+}
+
+div#concepto{
+    grid-area: concepto;
+}
+
+div#concepto2{
+    grid-area: concepto2;
+}
+
+div#queEs{
+    grid-area: queEs;
+}
+
+div#queEs2{
+    grid-area: queEs2;
+}
+
+div#ser{
+    grid-area: ser;
+}
+
+div#ser2{
+    grid-area: ser2;
+}
+
+div#img1{
+    grid-area: img1;
+}
+
+div#img2{
+    grid-area: img2;
+}
+
+.img1{
+    width: 80%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    height: 700px;
+    justify-self: center;
+    background: url(../imagenes/Untitled.png);
+}
+
+.img2{
+    width: 80%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    height: 700px;
+    justify-self: center;
+    background: url(../imagenes/foto_0000000820161019173146.jpg) no-repeat;
+}
+
+
+/*---------------------------------------------*/
+
+.fondoColor{ 
+    background-color: #e4e4e4 ;
+    padding: 20%;
+    border-radius: 40px 0px 40px 0px;
+}
+
+.fondoColor2{ 
+    background-color: #e4e4e4 ;
+    padding: 20%;
+    border-radius: 0px 40px 0px 40px;
+}
+
+.comentarioMapa1{
+   justify-self: start;
+   font-size: 20px;
+   color: rgb(87, 87, 87);
+   text-align: center;
+
+}
+
+.comentarioMapa2{
+    justify-self: end;
+    font-size: 20px;
+    color: rgb(87, 87, 87);
+    text-align: center;
+}
+
+/*--------------grilla de salones-----------*/
+
+.tituloPrincipal{
     font-size: 40px;
     background-size: initial;
     background-repeat: repeat;
     background-image: url(https://blowdrybar.es/wp-content/uploads/2021/04/personal_stylist_29.png);
-    border-top-width: 5px;
-    border-color: #000000;
     padding-top: 30px;
     padding-bottom: 30px;
-    max-width: 700px;
-    font-weight: 300;
+    max-width: 100%;
+    font-weight: 100;
     margin: auto;
-    margin-top: 20px;
-    font-family: "Roboto";
+    font-family:'Times New Roman', Times, serif;
     line-height: 1.4em;
 }
 
+main div h3{
+    padding: 15px;
+    text-align: center;
+}
 
+.espaciado{
+    padding-bottom: 20px;
+}
+
+.espaciado2{
+    padding: 20px;
+    text-align: center;
+}
+
+.margenes{
+    margin: 40px 0px 0px 0px;
+}
+
+.margenLateral{
+    margin: 0px 20px;
+}
+
+.fuenteCambiada{
+    font-weight: 100;
+    line-height: 2em;
+    max-width: 100;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.fuenteCambiada2{
+    font-weight: bolder;
+    max-width: 300;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #b1a7a6;
+}
+
+.fuenteCambiada3{
+    font-weight: bolder;
+    max-width: 300;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 1.4em;
+    color: #4b4849;
+}
+
+.degradadoNegroBlanco{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(26,26,26,1) 100%);
+
+}
+
+/*-----------------Pagina Contacto---------------------------*/
+
+.formulario{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    width: 40%;
+    height: 60%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0,0,0,0.8) 0px 0px 50px;
+    border-radius: 15px;
+}
+
+input, textarea{
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 15px;
+    width: 80%;
+    margin: 20px;
+    transition: all 300ms;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+input:focus, textarea:focus{
+    border-bottom-color: #610061;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: #b1a7a6 0px 0px 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+button:hover{
+    transform: scale(1.05);
+    box-shadow: #b1a7a6 0px 0px 5px;
+}
 /* --------------------------------footer-------------------------------*/
 
 .lineaRoja{
@@ -131,4 +465,13 @@ footer a{
 
 .centrado{
     text-align: center;
+}
+
+
+
+
+/* -------------------Media Queries*/
+
+@media screen and (max-width: 425px){  
+    
 }
