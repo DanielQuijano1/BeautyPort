@@ -501,6 +501,10 @@ footer a{
         width: 100%;
     }
 
+    .fuenteVerde{
+        text-align: right;
+    }
+
     header nav{
         padding-top: 0px;
     }
