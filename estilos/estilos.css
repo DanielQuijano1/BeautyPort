@@ -48,7 +48,7 @@ header div{
 
 .fuenteVerde{
     color: rgb(14, 212, 14);
-    float: left;
+    justify-self: flex-start;
     height: 10px;
     margin-left: 10px;
 }
@@ -502,7 +502,7 @@ footer a{
     }
 
     .fuenteVerde{
-        text-align: right;
+        justify-self: flex-end;
     }
 
     header nav{
