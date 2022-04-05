@@ -486,6 +486,7 @@ footer a{
 
     header{
         height: 100vw;
+        width: 100%;
     }
 
     .ancho{
@@ -500,6 +501,7 @@ footer a{
 
     header nav{
         padding-top: 0px;
+        position: relative;
     }
 
     header nav ul li{
@@ -515,7 +517,6 @@ footer a{
     }
 
     header nav ul li a{
-        position: relative;
         color: #4e007c ;
         text-transform: uppercase;
         font-weight: 500;
