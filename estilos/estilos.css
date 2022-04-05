@@ -82,6 +82,10 @@ header nav ul li a:hover{
     justify-content: center;
 }
 
+ol, ul{
+    padding-left: 0px;
+}
+
 body{
     font-size: 18px;
     color: #666;
@@ -525,6 +529,4 @@ footer a{
         background-image: none;
     }
 
-    ol, ul{
-        padding-left: 0px;
-    }
+    
