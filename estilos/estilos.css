@@ -478,7 +478,7 @@ footer a{
 
 /* -------------------Media Queries*/
 
-@media screen and (max-width: 425px){  
+@media screen and (max-width: 500px){  
 
     .lineaRoja{
         display: none;
@@ -529,4 +529,4 @@ footer a{
         background-image: none;
     }
 
-    
+}
