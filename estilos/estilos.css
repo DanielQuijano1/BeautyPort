@@ -23,6 +23,16 @@ header div{
     display: flex;
 }
 
+h3{
+    font-weight: 700;
+}    
+
+h4{
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
 .ancho{
     width: 80%;
     height: 100px;
@@ -330,7 +340,7 @@ div#img2{
     padding-top: 30px;
     padding-bottom: 30px;
     max-width: 100%;
-    font-weight: 100;
+    font-weight: 700;
     margin: auto;
     font-family:'Times New Roman', Times, serif;
     line-height: 1.4em;
@@ -642,21 +652,16 @@ footer a{
         justify-content: center;
     }
 
+    .img1,.img2{
+        width: 100%;
+    }
+
     #concepto{
         background-color: #4b4849;
         color: #fff;
         width: 100vw;
     }
 
-    h3{
-        font-weight: 700;
-    }    
-
-    h4{
-        font-size: 30px;
-        font-weight: 900;
-        text-transform: uppercase;
-    }
 
     body{
         background-image: none;
