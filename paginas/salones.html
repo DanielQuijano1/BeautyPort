@@ -31,12 +31,27 @@
             </div>
 
             <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="salones.html">Salones</a></li>
-                    <li><a href="filosofia.html">Filosofia</a></li>
-                    <li><a href="contacto.html">Contactanos</a></li>
+                <ul class="alineados">
+                    <div class="ocultoParaCelular">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../paginas/servicios.html">Servicios</a></li>
+                        <li><a href="../paginas/salones.html">Salones</a></li>
+                        <li><a href="../paginas/filosofia.html">Filosofia</a></li>
+                        <li><a href="../paginas/contacto.html">Contactanos</a></li>
+                    </div>
+                    <div class="ocultoParaPc">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            MENU
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <li><a class="btn btn-primary" href="../index.html">Inicio</a></li>
+                            <li><a class="btn btn-primary" href="../paginas/servicios.html">Servicios</a></li>
+                            <li><a class="btn btn-primary" href="../paginas/salones.html">Salones</a></li>
+                            <li><a class="btn btn-primary" href="../paginas/filosofia.html">Filosofia</a></li>
+                            <li><a class="btn btn-primary" href="../paginas/contacto.html">Contactanos</a></li>
+                        </div>
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -64,7 +79,7 @@
             </div>
         </div>
 
-        <div id="grilla2" class="">
+        <div id="grilla2">
             <div id="mapa1">
                 <div class="fondoColor">
                     <iframe
