@@ -1,0 +1,115 @@
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;  
+    div{
+        display: flex;
+    }
+    nav{
+        width: 450px;
+        height: 70px;
+        padding-top: 30px;
+        text-align: right;
+        margin-left: auto;
+        ul li{
+            display: inline-block; 
+            a{
+                font-size: 2rem;
+                color: #4b4849;  
+                padding-left: 15px;
+            }
+            &a:hover{
+                color: aquamarine;
+            }
+        }
+    }
+}
+
+
+h3{
+    font-weight: 700;
+    text-align: center;
+}    
+
+h4{
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.ancho{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo{
+    width: 280px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    justify-self: flex-start;
+    display: block;
+    p a{
+        color: red;
+        font-size: 60px;
+    }
+}
+
+.ocultoParaPC{
+    display: none;
+}
+
+.btn{
+    display: none;
+}
+
+.fuenteVerde{
+    color: rgb(14, 212, 14);
+    justify-self: flex-start;
+    height: 10px;
+    margin-left: 10px;
+}
+
+.alineados{
+    flex-direction: row;
+    justify-content: center;
+}
+
+ol, ul{
+    padding-left: 0px;
+}
+
+body{
+    font-size: 18px;
+    color: #666;
+    background-color: #fff;
+    line-height: 1.7em;
+    width: 100%;
+    background-image: url(../imagenes/04f560bb-b7ad-4bbd-955f-f5fd67e5d031.jpg);
+}
+
+main{
+    width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.fondoCambiado{
+    background-color: transparent;
+    background-size: cover;
+}
+
+.imagenIndex{
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    height: 900px;
+    background-image: url(../imagenes/stock-photo-blonde-girl-elegant-shiny-hairstyle.jpg);
+}

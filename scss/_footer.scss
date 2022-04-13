@@ -1,4 +1,18 @@
-footer{
-    height: 250px;
-    background-color: aquamarine;
+footer{ 
+    background-color: #4b4849;
+    p {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.25rem;
+        color: #b1a7a6;
+        font-weight: lighter;
+        line-height: normal;
+    }
+    a{ 
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        color: aliceblue;
+        font-weight: lighter;
+        text-align: center;
+    }
 }

@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.tituloPrincipal{
+    font-size: 40px;
+    background-size: initial;
+    background-repeat: repeat;
+    background-image: url(https://blowdrybar.es/wp-content/uploads/2021/04/personal_stylist_29.png);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 100%;
+    font-weight: 700;
+    margin: auto;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.4em;
+}
+
+main div h3{
+    padding: 15px;
+    text-align: center;
+}
+
+.espaciado{
+    padding-bottom: 20px;
+}
+
+.espaciado2{
+    padding: 20px;
+    text-align: center;
+}
+
+.margenes{
+    margin: 40px 0px 0px 0px;
+}
+
+.margenLateral{
+    margin: 0px 20px;
+}
+
+.fuenteCambiada{
+    font-weight: 100;
+    line-height: 2em;
+    max-width: 100;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.fuenteCambiada2{
+    font-weight: bolder;
+    max-width: 300;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #b1a7a6;
+}
+
+.fuenteCambiada3{
+    font-weight: bolder;
+    max-width: 300;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 1.4em;
+    color: #4b4849;
+}
+
+.degradadoNegroBlanco{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(26,26,26,1) 100%);
+
+}
+
+.centrado{
+    text-align: center;
+}
+
+.lineaRoja{
+    padding: 1px;
+    background-color: #e5383b;
+}

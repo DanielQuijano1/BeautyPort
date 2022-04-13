@@ -1,0 +1,35 @@
+#grilla{
+    display: grid;
+    grid-template-areas: 
+        "corte maquillaje colora"
+        "tecnico tratamientos ."
+        ". tratamientos ."
+        ". tratamientos ."
+        ;
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: 200px 200px 200px 200px;
+    justify-items: center;
+    padding:20px 20px 0px 20px;
+    grid-column-gap: 30px;
+    text-align: left;
+    div#corte{
+        grid-area: corte;
+    }
+    
+    div#maquillaje{
+        grid-area: maquillaje;
+    }
+    
+    div#color{
+        grid-area: colora;
+    }
+    
+    div#tecnico{
+        grid-area: tecnico;
+    }
+    
+    div#tratamientos{
+        grid-area: tratamientos;
+    }
+}
+

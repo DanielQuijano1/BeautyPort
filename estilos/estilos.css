@@ -628,6 +628,11 @@ footer a{
         justify-content: center;
     }
 
+    div#mapa1, div#mapa2{
+        width: 100%;
+        overflow: auto;
+    }
+
     .fondoColor, .fondoColor2{
         padding: 0px 0px 20px 0px;
         background-color: transparent;
@@ -676,5 +681,10 @@ footer a{
 
     .ocultoParaCelular{
         display: none;
+    }
+
+    iframe{
+        width: 100%;
+        height: auto;
     }
 }

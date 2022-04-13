@@ -1,0 +1,18 @@
+#grillaIndex {
+    display: grid;
+    grid-template-areas:
+        " . . "
+        " . . "
+        " . . "
+        " parrafo . "
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 200px 200px 300px;
+    justify-items: center;
+    padding: 20px 20px 0px 20px;
+    grid-column-gap: 0px;
+    text-align: left;
+    div#parrafo {
+        grid-area: parrafo;
+    }
+}

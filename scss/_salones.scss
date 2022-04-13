@@ -1,0 +1,61 @@
+#grilla2{
+    display: grid;
+    grid-template-areas: 
+        ". . . . ."
+        " mapa1 mapa1 comentarioMapa1 comentarioMapa1 . "
+        " . . . . . "
+        " comentarioMapa2 comentarioMapa2 mapa2 mapa2 ."
+        " . . . . . "
+        ;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100px 300px 300px 300px 200px;
+    justify-items: center;
+    padding:50px 20px 0px 20px;
+    grid-column-gap: 30px;
+    text-align: left;
+    align-items: center;
+    background: rgb(25,25,25);
+    background: linear-gradient(180deg, rgba(25,25,25,1) 0%, rgba(181,181,181,1) 25%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+    div#mapa1{
+        grid-area: mapa1;
+        z-index: 100;
+    }
+    div#comentarioMapa1{
+        grid-area: comentarioMapa1;
+        z-index: 50;
+    }
+    div#mapa2{
+        grid-area: mapa2;
+    }
+    div#comentarioMapa2{
+        grid-area: comentarioMapa2;
+    }
+}
+
+.fondoColor{ 
+    background-color: #e4e4e4 ;
+    padding: 20%;
+    border-radius: 40px 0px 40px 0px;
+}
+
+.fondoColor2{ 
+    background-color: #e4e4e4 ;
+    padding: 20%;
+    border-radius: 0px 40px 0px 40px;
+}
+
+.comentarioMapa1{
+   justify-self: start;
+   font-size: 20px;
+   color: rgb(87, 87, 87);
+   text-align: center;
+
+}
+
+.comentarioMapa2{
+    justify-self: end;
+    font-size: 20px;
+    color: rgb(87, 87, 87);
+    text-align: center;
+}
+
