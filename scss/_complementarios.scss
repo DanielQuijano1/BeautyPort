@@ -18,18 +18,17 @@ html{
     background-size: initial;
     background-repeat: repeat;
     background-image: url(https://blowdrybar.es/wp-content/uploads/2021/04/personal_stylist_29.png);
-    padding-top: 30px;
-    padding-bottom: 30px;
     max-width: 100%;
     font-weight: 700;
     margin: auto;
-    font-family:'Times New Roman', Times, serif;
+    font-family: map-get($estilos, FontF );
     line-height: 1.4em;
+    @include paddings (30px,30px)
 }
 
 main div h3{
     padding: 15px;
-    text-align: center;
+    text-align: map-get($estilos , centro );
 }
 
 .espaciado{
@@ -38,7 +37,7 @@ main div h3{
 
 .espaciado2{
     padding: 20px;
-    text-align: center;
+    text-align: map-get($estilos , centro );
 }
 
 .margenes{
@@ -53,31 +52,28 @@ main div h3{
     font-weight: 100;
     line-height: 2em;
     max-width: 100;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    font-size: map-get($estilos, tFuente1 );
+    font-family: map-get($estilos, FontF );
+    @include paddings (30px,30px)
 }
 
 .fuenteCambiada2{
-    font-weight: bolder;
+    font-weight: map-get($estilos , grosor );
     max-width: 300;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    font-size: map-get($estilos, tFuente2 );
+    font-family: map-get($estilos, FontF );
     color: #b1a7a6;
+    @include paddings (30px,30px)
 }
 
 .fuenteCambiada3{
-    font-weight: bolder;
+    font-weight: map-get($estilos , grosor );
     max-width: 300;
     font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    font-family: map-get($estilos, FontF );
     line-height: 1.4em;
     color: #4b4849;
+    @include paddings (30px,30px)
 }
 
 .degradadoNegroBlanco{
@@ -87,10 +83,15 @@ main div h3{
 }
 
 .centrado{
-    text-align: center;
+    text-align: map-get($estilos , centro );
 }
 
 .lineaRoja{
     padding: 1px;
     background-color: #e5383b;
+
+}
+
+ol, ul{
+    margin-bottom: 0px;
 }

@@ -1,8 +1,6 @@
 @media screen and (max-width: 500px){  
 
-    .lineaRoja{
-        display: none;
-    }
+    
 
     header{
         height: 180px;
@@ -11,7 +9,6 @@
 
     .ancho{
         flex-direction: column;
-        width: 100%;
         text-align: center;
     }
 
@@ -53,6 +50,7 @@
         border: #e0eafc 3px solid;
         border-radius: 12px;
         background-color: white;
+        position: sticky;
     }
 
     .btn-primary:hover{
@@ -179,6 +177,7 @@
 
     form{
         width: 95vw;
+        box-shadow: none;
     }
 
     .ocultoParaCelular{
@@ -187,6 +186,9 @@
 
     iframe{
         width: 100%;
+        height: auto;
+    }
+    .formulario{
         height: auto;
     }
 }
