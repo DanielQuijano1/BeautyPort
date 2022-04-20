@@ -27,3 +27,12 @@ $estilos: ( /* ver en la pagina de complementarios, ahi lo cambie*/
     padding-top: $paddingT;
     padding-bottom: $paddingB;
 }
+
+@mixin imagen($ancho,$bsize,$posicion,$display,$alto,$justificado){
+        width: $ancho;
+        background-size: $bsize;
+        position: $posicion;
+        display: $display;
+        height: $alto;
+        justify-self: $justificado;
+}

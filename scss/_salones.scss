@@ -1,13 +1,12 @@
 #grilla2{
     display: grid;
     grid-template-areas: 
-        ". . . . ."
-        " mapa1 mapa1 comentarioMapa1 comentarioMapa1 . "
-        " . . . . . "
-        " comentarioMapa2 comentarioMapa2 mapa2 mapa2 ."
-        " . . . . . "
+        ". . . . "
+        " mapa1 mapa1 comentarioMapa1 comentarioMapa1  "
+        " . . . .  "
+        " comentarioMapa2 comentarioMapa2 mapa2 mapa2 "
+        " . . . .  "
         ;
-    grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 100px 300px 300px 300px 200px;
     justify-items: center;
     padding:50px 20px 0px 20px;

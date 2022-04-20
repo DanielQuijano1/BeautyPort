@@ -42,21 +42,11 @@
         
     }
     .img1{
-        width: 80%;
-        background-size: cover;
-        position: relative;
-        display: flex;
-        height: 700px;
-        justify-self: center;
+       @include imagen (80%,cover,relative,flex,700px,center);
         background: url(../imagenes/Untitled.png);
     }
     .img2{
-        width: 80%;
-        background-size: cover;
-        position: relative;
-        display: flex;
-        height: 700px;
-        justify-self: center;
+        @include imagen (80%,cover,relative,flex,700px,center);
         background: url(../imagenes/foto_0000000820161019173146.jpg) no-repeat;
     }
 }
