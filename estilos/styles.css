@@ -40,7 +40,8 @@ input, textarea {
   transition: all 300ms;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
   input:focus, textarea:focus {
-    border-bottom-color: #610061; }
+    border-bottom-color: #610061;
+    background-color: #fcfcfc; }
 
 button {
   border: none;
