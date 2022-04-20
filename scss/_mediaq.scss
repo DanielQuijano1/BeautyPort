@@ -8,6 +8,7 @@
     .ancho{
         flex-direction: column;
         text-align: center;
+        width: 100%;
     }
 
     .logo{
@@ -21,8 +22,10 @@
 
     header nav{
         padding-top: 0px;
-        width: 100%;
+        width: 80%;
         z-index: 1000;
+        margin-left: 0px;
+        margin: auto;
     }
 
     header div{
