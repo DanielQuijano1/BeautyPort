@@ -41,18 +41,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     font-family: map-get($estilos, FontF);
-
-    h3 {
-        font-weight: 700;
-        text-align: center;
-    }
-
-    h4 {
-        font-size: 30px;
-        font-weight: 900;
-        text-transform: uppercase;
-    }
-
 }
 
 .logo {

@@ -57,21 +57,19 @@
         font-size: 2rem;
         padding-left: 15px;
         width: 100%;
+    }
+    .btn-primary {
+        text-align: center;
+        border: #e0eafc 3px solid;
+        border-radius: 12px;
+        background-color: white;
 
-        .btn-primary {
-            text-align: center;
-            border: #e0eafc 3px solid;
-            border-radius: 12px;
-            background-color: white;
-            position: sticky;
-
-            &:hover {
-                background-color: #D9AFD9;
-                background-image: linear-gradient(57deg, #D9AFD9 0%, #97D9E1 100%);
-                ;
-                color: #666;
-                border-color: #666;
-            }
+        &:hover {
+            background-color: #D9AFD9;
+            background-image: linear-gradient(57deg, #D9AFD9 0%, #97D9E1 100%);
+            ;
+            color: #666;
+            border-color: #666;
         }
     }
 
