@@ -1,6 +1,6 @@
-#grillaFilosofia{
+#grillaFilosofia {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         " concepto concepto "
         " concepto2 concepto2 "
         " queEs img1 "
@@ -9,47 +9,54 @@
         " img2 ser "
         " img2 ser2 "
         " . ."
-        ;
+    ;
     grid-template-columns: 50% 50%;
     grid-template-rows: 200px 200px 200px 500px 200px 200px 500px 100px;
     justify-items: center;
-    padding:20px 20px 0px 20px;
+    padding: 20px 20px 0px 20px;
     text-align: center;
-    div#concepto{
+
+    div#concepto {
         grid-area: concepto;
     }
-    div#concepto2{
+
+    div#concepto2 {
         grid-area: concepto2;
     }
-    div#queEs{
+
+    div#queEs {
         grid-area: queEs;
     }
-    div#queEs2{
+
+    div#queEs2 {
         grid-area: queEs2;
     }
-    div#ser{
+
+    div#ser {
         grid-area: ser;
     }
-    div#ser2{
+
+    div#ser2 {
         grid-area: ser2;
     }
-    div#img1{
+
+    div#img1 {
         grid-area: img1;
-        
+
     }
-    div#img2{
+
+    div#img2 {
         grid-area: img2;
-        
+
     }
-    .img1{
-       @include imagen (80%,cover,relative,flex,700px,center);
+
+    .img1 {
+        @include imagen (80%, cover, relative, flex, 700px, center);
         background: url(../imagenes/Untitled.png);
     }
-    .img2{
-        @include imagen (80%,cover,relative,flex,700px,center);
+
+    .img2 {
+        @include imagen (80%, cover, relative, flex, 700px, center);
         background: url(../imagenes/foto_0000000820161019173146.jpg) no-repeat;
     }
 }
-
-
-

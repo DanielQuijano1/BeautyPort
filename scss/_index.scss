@@ -12,7 +12,18 @@
     padding: 20px 20px 0px 20px;
     grid-column-gap: 0px;
     text-align: left;
+
     div#parrafo {
         grid-area: parrafo;
     }
+}
+
+.fondoCambiado {
+    background-color: transparent;
+    background-size: cover;
+}
+
+.imagenIndex {
+    @include imagen (100%, cover, relative, flex, 900px, center);
+    background-image: url(../imagenes/stock-photo-blonde-girl-elegant-shiny-hairstyle.jpg);
 }

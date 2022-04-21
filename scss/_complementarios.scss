@@ -1,23 +1,23 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-.sombrasDeBordes{
-    box-shadow: rgba(0,0,0,0.8) 0px 0px 20px;
+.sombrasDeBordes {
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 20px;
 }
 
-.tituloPrincipal{
+.tituloPrincipal {
     font-size: 40px;
     background-size: initial;
     background-repeat: repeat;
@@ -25,77 +25,96 @@ html{
     max-width: 100%;
     font-weight: 700;
     margin: auto;
-    font-family: map-get($estilos, FontF );
+    font-family: map-get($estilos, FontF);
     line-height: 1.4em;
-    @include paddings (30px,30px)
+    @include paddings (30px, 30px)
 }
 
-main div h3{
-    padding: 15px;
-    text-align: map-get($estilos , centro );
-}
-
-.espaciado{
+.espaciado {
     padding-bottom: 20px;
 }
 
-.espaciado2{
+.espaciado2 {
     padding: 20px;
-    text-align: map-get($estilos , centro );
+    text-align: map-get($estilos, centro);
 }
 
-.margenes{
+.margenes {
     margin: 40px 0px 0px 0px;
 }
 
-.margenLateral{
+.margenLateral {
     margin: 0px 20px;
 }
 
-.fuenteCambiada{
+.fuenteCambiada {
     font-weight: 100;
     line-height: 2em;
     max-width: 100;
-    font-size: map-get($estilos, tFuente1 );
-    font-family: map-get($estilos, FontF );
-    @include paddings (30px,30px)
+    font-size: map-get($estilos, tFuente1);
+    font-family: map-get($estilos, FontF);
+    @include paddings (30px, 30px)
 }
 
-.fuenteCambiada2{
-    font-weight: map-get($estilos , grosor );
+.fuenteCambiada2 {
+    font-weight: map-get($estilos, grosor);
     max-width: 300;
-    font-size: map-get($estilos, tFuente2 );
-    font-family: map-get($estilos, FontF );
+    font-size: map-get($estilos, tFuente2);
+    font-family: map-get($estilos, FontF);
     color: #b1a7a6;
-    @include paddings (30px,30px)
+    @include paddings (30px, 30px)
 }
 
-.fuenteCambiada3{
-    font-weight: map-get($estilos , grosor );
+.fuenteCambiada3 {
+    font-weight: map-get($estilos, grosor);
     max-width: 300;
     font-size: 50px;
-    font-family: map-get($estilos, FontF );
+    font-family: map-get($estilos, FontF);
     line-height: 1.4em;
     color: #4b4849;
-    @include paddings (30px,30px)
+    @include paddings (30px, 30px)
 }
 
-.degradadoNegroBlanco{
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(26,26,26,1) 100%);
+.degradadoNegroBlanco {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(26, 26, 26, 1) 100%);
 
 }
 
-.centrado{
-    text-align: map-get($estilos , centro );
+.centrado {
+    text-align: map-get($estilos, centro);
 }
 
-.lineaRoja{
+.lineaRoja {
     padding: 1px;
     background-color: #e5383b;
 
 }
 
-ol, ul{
+ol,
+ul {
     margin-bottom: 0px;
+}
+
+body {
+    font-size: 18px;
+    color: #666;
+    background-color: #fff;
+    line-height: 1.7em;
+    width: 100%;
+    background-image: url(../imagenes/04f560bb-b7ad-4bbd-955f-f5fd67e5d031.jpg);
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    div h3 {
+        padding: 15px;
+        text-align: map-get($estilos, centro);
+    }
+
 }

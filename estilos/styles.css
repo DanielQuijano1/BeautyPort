@@ -1,16 +1,3 @@
-/*MAPa*/
-.btn--facebook {
-  background-color: #3a5795;
-  width: 10px;
-  height: 10px;
-  border-radius: 4px; }
-
-.btn--instagram {
-  background-color: #df0f0f;
-  width: 10px;
-  height: 10px;
-  border-radius: 4px; }
-
 .formulario {
   display: flex;
   width: 100%;
@@ -30,7 +17,8 @@ form {
   box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 50px;
   border-radius: 15px; }
 
-input, textarea {
+input,
+textarea {
   border: none;
   resize: none;
   outline: none;
@@ -39,7 +27,8 @@ input, textarea {
   margin: 20px;
   transition: all 300ms;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-  input:focus, textarea:focus {
+  input:focus,
+  textarea:focus {
     border-bottom-color: #610061;
     background-color: #fcfcfc; }
 
@@ -174,6 +163,19 @@ button {
   #grillaIndex div#parrafo {
     grid-area: parrafo; }
 
+.fondoCambiado {
+  background-color: transparent;
+  background-size: cover; }
+
+.imagenIndex {
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  height: 900px;
+  justify-self: center;
+  background-image: url(../imagenes/stock-photo-blonde-girl-elegant-shiny-hairstyle.jpg); }
+
 header {
   width: 100%;
   height: 100px;
@@ -197,15 +199,6 @@ header {
       header nav ul lia:hover {
         color: aquamarine; }
 
-h3 {
-  font-weight: 700;
-  text-align: center; }
-
-h4 {
-  font-size: 30px;
-  font-weight: 900;
-  text-transform: uppercase; }
-
 .ancho {
   width: 80%;
   height: 100px;
@@ -214,6 +207,13 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
   font-family: "Times New Roman"; }
+  .ancho h3 {
+    font-weight: 700;
+    text-align: center; }
+  .ancho h4 {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase; }
 
 .logo {
   width: 280px;
@@ -241,36 +241,9 @@ h4 {
   flex-direction: row;
   justify-content: center; }
 
-ol, ul {
+ol,
+ul {
   padding-left: 0px; }
-
-body {
-  font-size: 18px;
-  color: #666;
-  background-color: #fff;
-  line-height: 1.7em;
-  width: 100%;
-  background-image: url(../imagenes/04f560bb-b7ad-4bbd-955f-f5fd67e5d031.jpg); }
-
-main {
-  width: 1200px;
-  margin: auto;
-  background-color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px; }
-
-.fondoCambiado {
-  background-color: transparent;
-  background-size: cover; }
-
-.imagenIndex {
-  width: 100%;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  height: 900px;
-  justify-self: center;
-  background-image: url(../imagenes/stock-photo-blonde-girl-elegant-shiny-hairstyle.jpg); }
 
 footer {
   background-color: #4b4849;
@@ -316,10 +289,6 @@ html {
   line-height: 1.4em;
   padding-top: 30px;
   padding-bottom: 30px; }
-
-main div h3 {
-  padding: 15px;
-  text-align: center; }
 
 .espaciado {
   padding-bottom: 20px; }
@@ -373,32 +342,62 @@ main div h3 {
   padding: 1px;
   background-color: #e5383b; }
 
-ol, ul {
+ol,
+ul {
   margin-bottom: 0px; }
+
+body {
+  font-size: 18px;
+  color: #666;
+  background-color: #fff;
+  line-height: 1.7em;
+  width: 100%;
+  background-image: url(../imagenes/04f560bb-b7ad-4bbd-955f-f5fd67e5d031.jpg); }
+
+main {
+  width: 1200px;
+  margin: auto;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px; }
+  main div h3 {
+    padding: 15px;
+    text-align: center; }
 
 @media screen and (max-width: 500px) {
   header {
     height: 180px;
     width: 100%; }
-  .ancho {
-    flex-direction: column;
-    text-align: center;
-    width: 100%; }
-  .logo {
-    margin: 0px auto 20px auto;
-    width: 100%; }
+    header .ancho {
+      flex-direction: column;
+      text-align: center;
+      width: 100%; }
+      header .ancho .logo {
+        margin: 0px auto 20px auto;
+        width: 100%; }
+      header .ancho nav {
+        padding-top: 0px;
+        width: 80%;
+        z-index: 1000;
+        margin-left: 0px;
+        margin: auto; }
+        header .ancho nav ul li {
+          flex-direction: column;
+          width: 100%;
+          height: 13vw;
+          text-align: center;
+          padding: 10px 0px 10px 0px;
+          margin: 2px 0px; }
+          header .ancho nav ul li a {
+            color: #4e007c;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative; }
+      header .ancho div {
+        flex-direction: column; }
   .fuenteVerde {
     justify-self: flex-end; }
-  header nav {
-    padding-top: 0px;
-    width: 80%;
-    z-index: 1000;
-    margin-left: 0px;
-    margin: auto; }
-  header div {
-    flex-direction: column; }
-  .imagenIndex {
-    height: auto; }
   .btn {
     display: inline-block;
     font-weight: 500;
@@ -407,30 +406,18 @@ ol, ul {
     font-size: 2rem;
     padding-left: 15px;
     width: 100%; }
-  .btn-primary {
-    text-align: center;
-    border: #e0eafc 3px solid;
-    border-radius: 12px;
-    background-color: white;
-    position: sticky; }
-  .btn-primary:hover {
-    background-color: #D9AFD9;
-    background-image: linear-gradient(57deg, #D9AFD9 0%, #97D9E1 100%);
-    color: #666;
-    border-color: #666; }
-  header nav ul li {
-    flex-direction: column;
-    width: 100%;
-    height: 13vw;
-    text-align: center;
-    padding: 10px 0px 10px 0px;
-    margin: 2px 0px; }
-  header nav ul li a {
-    color: #4e007c;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: relative; }
+    .btn .btn-primary {
+      text-align: center;
+      border: #e0eafc 3px solid;
+      border-radius: 12px;
+      background-color: white;
+      position: sticky; }
+      .btn .btn-primary:hover {
+        background-color: #D9AFD9;
+        background-image: linear-gradient(57deg, #D9AFD9 0%, #97D9E1 100%);
+        color: #666;
+        border-color: #666; }
+  /*------ INDEX ------*/
   #grillaIndex {
     max-width: 100vw;
     overflow: hidden;
@@ -445,6 +432,9 @@ ol, ul {
   div#parrafo {
     background-color: #4b4849;
     color: #e0eafc; }
+  .imagenIndex {
+    height: auto; }
+  /*-------PAGINA SERVICIOS-------*/
   #grilla {
     max-width: 100vw;
     grid-template-areas: "corte" "maquillaje" "colora" "tecnico" "tratamientos";
@@ -452,6 +442,7 @@ ol, ul {
     grid-template-columns: 90vw;
     background-size: contain;
     justify-content: center; }
+  /*--------PAGINA SALONES----------*/
   #grilla2 {
     max-width: 100vw;
     grid-template-areas: "mapa1" "comentarioMapa1" "mapa2" "comentarioMapa2";
@@ -459,17 +450,22 @@ ol, ul {
     grid-template-columns: 90vw;
     background-size: contain;
     justify-content: center; }
-  div#mapa1, div#mapa2 {
+  div#mapa1,
+  div#mapa2 {
     width: 100%;
     overflow: auto;
     height: 100%; }
-    div#mapa1 div, div#mapa2 div {
+    div#mapa1 div,
+    div#mapa2 div {
       height: 100%; }
-      div#mapa1 div iframe, div#mapa2 div iframe {
+      div#mapa1 div iframe,
+      div#mapa2 div iframe {
         height: 100%; }
-  .fondoColor, .fondoColor2 {
+  .fondoColor,
+  .fondoColor2 {
     padding: 0px 0px 20px 0px;
     background-color: transparent; }
+  /*-------PAGINA FILOSOFIA------*/
   #grillaFilosofia {
     max-width: 100vw;
     grid-template-areas: " concepto " " concepto2 " "queEs" "queEs2" "img1" "ser" "ser2" "img2";
@@ -477,12 +473,14 @@ ol, ul {
     grid-template-columns: 90vw;
     background-size: contain;
     justify-content: center; }
-  .img1, .img2 {
+  .img1,
+  .img2 {
     width: 100%; }
   #concepto {
     background-color: #4b4849;
     color: #fff;
     width: 100vw; }
+  /*-----COMPLEMENTARIOS-------*/
   body {
     background-image: none; }
   main {

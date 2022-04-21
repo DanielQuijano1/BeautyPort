@@ -1,21 +1,6 @@
-/*MAPa*/
-$redes:(
-    facebook:#3a5795,
-    instagram: rgb(223, 15, 15),
-);
 
-@each $red, $color in $redes {
-    .btn--#{$red}{
-        background-color: $color;
-        width: 10px;
-        height: 10px;
-        border-radius: 4px;
-    }
-}
-
-
-
-$estilos: ( /* ver en la pagina de complementarios, ahi lo cambie*/
+$estilos: (
+    /* ver en la pagina de complementarios, ahi lo cambie*/
     tFuente1: 20px,
     tFuente2: 30px,
     FontF: 'Times New Roman',
@@ -23,16 +8,16 @@ $estilos: ( /* ver en la pagina de complementarios, ahi lo cambie*/
     grosor: bolder,
 );
 
-@mixin paddings($paddingT,$paddingB){
+@mixin paddings($paddingT, $paddingB) {
     padding-top: $paddingT;
     padding-bottom: $paddingB;
 }
 
-@mixin imagen($ancho,$bsize,$posicion,$display,$alto,$justificado){
-        width: $ancho;
-        background-size: $bsize;
-        position: $posicion;
-        display: $display;
-        height: $alto;
-        justify-self: $justificado;
+@mixin imagen($ancho, $bsize, $posicion, $display, $alto, $justificado) {
+    width: $ancho;
+    background-size: $bsize;
+    position: $posicion;
+    display: $display;
+    height: $alto;
+    justify-self: $justificado;
 }

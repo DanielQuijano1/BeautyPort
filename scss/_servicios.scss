@@ -1,35 +1,35 @@
-#grilla{
+#grilla {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "corte maquillaje colora"
         "tecnico tratamientos ."
         ". tratamientos ."
         ". tratamientos ."
-        ;
+    ;
     grid-template-columns: 30% auto 30%;
     grid-template-rows: 200px 200px 200px 200px;
     justify-items: center;
-    padding:20px 20px 0px 20px;
+    padding: 20px 20px 0px 20px;
     grid-column-gap: 30px;
     text-align: left;
-    div#corte{
+
+    div#corte {
         grid-area: corte;
     }
-    
-    div#maquillaje{
+
+    div#maquillaje {
         grid-area: maquillaje;
     }
-    
-    div#color{
+
+    div#color {
         grid-area: colora;
     }
-    
-    div#tecnico{
+
+    div#tecnico {
         grid-area: tecnico;
     }
-    
-    div#tratamientos{
+
+    div#tratamientos {
         grid-area: tratamientos;
     }
 }
-

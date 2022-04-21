@@ -1,4 +1,4 @@
-.formulario{
+.formulario {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-form{
+form {
     display: flex;
     flex-flow: column;
     background-color: white;
@@ -15,11 +15,12 @@ form{
     padding: 20px;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(0,0,0,0.8) 0px 0px 50px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 50px;
     border-radius: 15px;
 }
 
-input, textarea{
+input,
+textarea {
     border: none;
     resize: none;
     outline: none;
@@ -27,14 +28,15 @@ input, textarea{
     width: 80%;
     margin: 20px;
     transition: all 300ms;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-    &:focus{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    &:focus {
         border-bottom-color: #610061;
         background-color: #fcfcfc;
     }
 }
 
-button{
+button {
     border: none;
     outline: none;
     padding: 15px;
@@ -44,7 +46,8 @@ button{
     margin: 10px 0px;
     cursor: pointer;
     transition: all 300ms;
-    &:hover{
+
+    &:hover {
         transform: scale(1.05);
         box-shadow: #b1a7a6 0px 0px 5px;
     }

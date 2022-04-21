@@ -1,42 +1,55 @@
-@media screen and (max-width: 500px){  
- 
-    header{
+@media screen and (max-width: 500px) {
+
+    header {
         height: 180px;
         width: 100%;
+
+        .ancho {
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+
+            .logo {
+                margin: 0px auto 20px auto;
+                width: 100%;
+            }
+
+            nav {
+                padding-top: 0px;
+                width: 80%;
+                z-index: 1000;
+                margin-left: 0px;
+                margin: auto;
+
+                ul li {
+                    flex-direction: column;
+                    width: 100%;
+                    height: 13vw;
+                    text-align: center;
+                    padding: 10px 0px 10px 0px;
+                    margin: 2px 0px;
+
+                    a {
+                        color: #4e007c;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        position: relative;
+                    }
+                }
+            }
+
+            div {
+                flex-direction: column;
+            }
+        }
     }
 
-    .ancho{
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
-
-    .logo{
-        margin: 0px auto 20px auto;
-        width: 100%;
-    }
-
-    .fuenteVerde{
+    .fuenteVerde {
         justify-self: flex-end;
     }
 
-    header nav{
-        padding-top: 0px;
-        width: 80%;
-        z-index: 1000;
-        margin-left: 0px;
-        margin: auto;
-    }
-
-    header div{
-        flex-direction: column;
-    }
-
-    .imagenIndex{
-        height: auto;
-    }
-
-    .btn{
+    .btn {
         display: inline-block;
         font-weight: 500;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -44,50 +57,34 @@
         font-size: 2rem;
         padding-left: 15px;
         width: 100%;
+
+        .btn-primary {
+            text-align: center;
+            border: #e0eafc 3px solid;
+            border-radius: 12px;
+            background-color: white;
+            position: sticky;
+
+            &:hover {
+                background-color: #D9AFD9;
+                background-image: linear-gradient(57deg, #D9AFD9 0%, #97D9E1 100%);
+                ;
+                color: #666;
+                border-color: #666;
+            }
+        }
     }
 
-    .btn-primary{
-        text-align: center;
-        border: #e0eafc 3px solid;
-        border-radius: 12px;
-        background-color: white;
-        position: sticky;
-    }
-
-    .btn-primary:hover{
-        background-color: #D9AFD9;
-        background-image: linear-gradient(57deg, #D9AFD9 0%, #97D9E1 100%);
-        ;
-        color: #666;
-        border-color: #666;
-    }
-
-    header nav ul li{
-        flex-direction: column;
-        width: 100%;
-        height: 13vw;
-        text-align: center;
-        padding: 10px 0px 10px 0px;
-        margin: 2px 0px;
-    }
-
-    header nav ul li a{
-        color: #4e007c ;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        position: relative;
-    }
-
-    #grillaIndex{
+    /*------ INDEX ------*/
+    #grillaIndex {
         max-width: 100vw;
         overflow: hidden;
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
             " . "
             " parrafo "
         ;
-        grid-template-rows: 350px 400px ;
+        grid-template-rows: 350px 400px;
         grid-template-columns: 100vw;
         justify-content: center;
         background-size: contain;
@@ -95,19 +92,25 @@
         z-index: 500;
     }
 
-    div#parrafo{
+    div#parrafo {
         background-color: #4b4849;
         color: #e0eafc;
     }
 
-    #grilla{
+    .imagenIndex {
+        height: auto;
+    }
+
+    /*-------PAGINA SERVICIOS-------*/
+
+    #grilla {
         max-width: 100vw;
-        grid-template-areas: 
-        "corte"
-        "maquillaje"
-        "colora"
-        "tecnico"
-        "tratamientos"
+        grid-template-areas:
+            "corte"
+            "maquillaje"
+            "colora"
+            "tecnico"
+            "tratamientos"
         ;
         grid-template-rows: auto;
         grid-template-columns: 90vw;
@@ -115,13 +118,15 @@
         justify-content: center;
     }
 
-    #grilla2{
+    /*--------PAGINA SALONES----------*/
+
+    #grilla2 {
         max-width: 100vw;
-        grid-template-areas: 
-        "mapa1"
-        "comentarioMapa1"
-        "mapa2"
-        "comentarioMapa2"
+        grid-template-areas:
+            "mapa1"
+            "comentarioMapa1"
+            "mapa2"
+            "comentarioMapa2"
         ;
         grid-template-rows: 250px 200px 250px 200px;
         grid-template-columns: 90vw;
@@ -129,34 +134,40 @@
         justify-content: center;
     }
 
-    div#mapa1, div#mapa2{
+    div#mapa1,
+    div#mapa2 {
         width: 100%;
         overflow: auto;
         height: 100%;
-        div{
+
+        div {
             height: 100%;
-            iframe{
+
+            iframe {
                 height: 100%;
             }
         }
     }
 
-    .fondoColor, .fondoColor2{
+    .fondoColor,
+    .fondoColor2 {
         padding: 0px 0px 20px 0px;
         background-color: transparent;
     }
 
-    #grillaFilosofia{
+    /*-------PAGINA FILOSOFIA------*/
+
+    #grillaFilosofia {
         max-width: 100vw;
         grid-template-areas:
-        " concepto "
-        " concepto2 "
-        "queEs"
-        "queEs2"
-        "img1"
-        "ser"
-        "ser2"
-        "img2"
+            " concepto "
+            " concepto2 "
+            "queEs"
+            "queEs2"
+            "img1"
+            "ser"
+            "ser2"
+            "img2"
         ;
         grid-template-rows: auto;
         grid-template-columns: 90vw;
@@ -164,39 +175,42 @@
         justify-content: center;
     }
 
-    .img1,.img2{
+    .img1,
+    .img2 {
         width: 100%;
     }
 
-    #concepto{
+    #concepto {
         background-color: #4b4849;
         color: #fff;
         width: 100vw;
     }
 
+    /*-----COMPLEMENTARIOS-------*/
 
-    body{
+    body {
         background-image: none;
     }
 
-    main{
+    main {
         width: 100%;
     }
 
-    form{
+    form {
         width: 95vw;
         box-shadow: none;
     }
 
-    .ocultoParaCelular{
+    .ocultoParaCelular {
         display: none;
     }
 
-    iframe{
+    iframe {
         width: 100%;
         height: auto;
     }
-    .formulario{
+
+    .formulario {
         height: auto;
     }
 }
