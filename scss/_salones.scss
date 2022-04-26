@@ -10,10 +10,8 @@
     grid-template-rows: 100px 300px 300px 300px 200px;
     justify-items: center;
     padding: 50px 20px 0px 20px;
-    grid-column-gap: 30px;
     text-align: left;
     align-items: center;
-    background: rgb(25, 25, 25);
     background: linear-gradient(180deg, rgba(25, 25, 25, 1) 0%, rgba(181, 181, 181, 1) 25%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
 
     div#mapa1 {
@@ -36,28 +34,35 @@
 }
 
 .fondoColor {
-    background-color: #e4e4e4;
+    background: url(../imagenes/13528568_1752697558322286_1847042502262912847_o.jpg);
     padding: 20%;
     border-radius: 40px 0px 40px 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) -10px 10px 1.5px;
 }
 
 .fondoColor2 {
-    background-color: #e4e4e4;
+    background: url(../imagenes/13528568_1752697558322286_1847042502262912847_o.jpg);
     padding: 20%;
     border-radius: 0px 40px 0px 40px;
-}
-
-.comentarioMapa1 {
-    justify-self: start;
-    font-size: 20px;
-    color: rgb(87, 87, 87);
-    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.2) -10px 10px 1.5px;
 
 }
 
-.comentarioMapa2 {
-    justify-self: end;
-    font-size: 20px;
-    color: rgb(87, 87, 87);
-    text-align: center;
+.comentarioMapa1, .comentarioMapa2{
+    background-color: black;
+    opacity: 0.85;
+    h4 {
+        font-size: 30px;
+        color: rgb(32, 32, 32);
+        text-align: center;
+        -webkit-text-stroke: 1px white;
+        
+    }
+    h5{
+        font-size: 20px;
+        font-weight: bolder;
+        color: white;
+        text-align: center;
+    
+    }
 }

@@ -53,10 +53,12 @@
     .img1 {
         @include imagen (80%, cover, relative, flex, 700px, center);
         background: url(../imagenes/Untitled.png);
+        border-radius: 0px 40px 0px 40px;
     }
 
     .img2 {
-        @include imagen (80%, cover, relative, flex, 700px, center);
+        @include imagen (75%, cover, relative, flex, 562px, center);
         background: url(../imagenes/foto_0000000820161019173146.jpg) no-repeat;
+       border-radius: 40px 0px 40px 0px;
     }
 }

@@ -10,7 +10,7 @@ form {
   flex-flow: column;
   background-color: white;
   width: 40%;
-  height: 60%;
+  height: 70%;
   padding: 20px;
   justify-content: center;
   align-items: center;
@@ -97,15 +97,17 @@ button {
     display: flex;
     height: 700px;
     justify-self: center;
-    background: url(../imagenes/Untitled.png); }
+    background: url(../imagenes/Untitled.png);
+    border-radius: 0px 40px 0px 40px; }
   #grillaFilosofia .img2 {
-    width: 80%;
+    width: 75%;
     background-size: cover;
     position: relative;
     display: flex;
-    height: 700px;
+    height: 562px;
     justify-self: center;
-    background: url(../imagenes/foto_0000000820161019173146.jpg) no-repeat; }
+    background: url(../imagenes/foto_0000000820161019173146.jpg) no-repeat;
+    border-radius: 40px 0px 40px 0px; }
 
 #grilla2 {
   display: grid;
@@ -113,10 +115,8 @@ button {
   grid-template-rows: 100px 300px 300px 300px 200px;
   justify-items: center;
   padding: 50px 20px 0px 20px;
-  grid-column-gap: 30px;
   text-align: left;
   align-items: center;
-  background: #191919;
   background: linear-gradient(180deg, #191919 0%, #b5b5b5 25%, white 50%, white 100%); }
   #grilla2 div#mapa1 {
     grid-area: mapa1;
@@ -130,26 +130,31 @@ button {
     grid-area: comentarioMapa2; }
 
 .fondoColor {
-  background-color: #e4e4e4;
+  background: url(../imagenes/13528568_1752697558322286_1847042502262912847_o.jpg);
   padding: 20%;
-  border-radius: 40px 0px 40px 0px; }
+  border-radius: 40px 0px 40px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) -10px 10px 1.5px; }
 
 .fondoColor2 {
-  background-color: #e4e4e4;
+  background: url(../imagenes/13528568_1752697558322286_1847042502262912847_o.jpg);
   padding: 20%;
-  border-radius: 0px 40px 0px 40px; }
+  border-radius: 0px 40px 0px 40px;
+  box-shadow: rgba(0, 0, 0, 0.2) -10px 10px 1.5px;
+  margin: 0px 20px; }
 
-.comentarioMapa1 {
-  justify-self: start;
-  font-size: 20px;
-  color: #575757;
-  text-align: center; }
-
-.comentarioMapa2 {
-  justify-self: end;
-  font-size: 20px;
-  color: #575757;
-  text-align: center; }
+.comentarioMapa1, .comentarioMapa2 {
+  background-color: black;
+  opacity: 0.85; }
+  .comentarioMapa1 h4, .comentarioMapa2 h4 {
+    font-size: 30px;
+    color: #202020;
+    text-align: center;
+    -webkit-text-stroke: 1px white; }
+  .comentarioMapa1 h5, .comentarioMapa2 h5 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    text-align: center; }
 
 #grillaIndex {
   display: grid;
@@ -271,12 +276,12 @@ html {
   box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 20px; }
 
 .tituloPrincipal {
-  font-size: 40px;
+  font-size: 50px;
   background-size: initial;
   background-repeat: repeat;
   background-image: url(https://blowdrybar.es/wp-content/uploads/2021/04/personal_stylist_29.png);
   max-width: 100%;
-  font-weight: 700;
+  font-weight: 900px;
   margin: auto;
   font-family: "Times New Roman";
   line-height: 1.4em;
@@ -348,7 +353,7 @@ body {
   background-image: url(../imagenes/04f560bb-b7ad-4bbd-955f-f5fd67e5d031.jpg); }
 
 main {
-  width: 1200px;
+  width: 90vw;
   margin: auto;
   background-color: #fff;
   font-family: Arial, Helvetica, sans-serif;
