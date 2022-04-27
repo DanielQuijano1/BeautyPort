@@ -139,8 +139,7 @@ button {
   background: url(../imagenes/13528568_1752697558322286_1847042502262912847_o.jpg);
   padding: 20%;
   border-radius: 0px 40px 0px 40px;
-  box-shadow: rgba(0, 0, 0, 0.2) -10px 10px 1.5px;
-  margin: 0px 20px; }
+  box-shadow: rgba(0, 0, 0, 0.2) -10px 10px 1.5px; }
 
 .comentarioMapa1, .comentarioMapa2 {
   background-color: black;
