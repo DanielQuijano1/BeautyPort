@@ -5,76 +5,87 @@ header {
     position: relative;
     padding-bottom: 110px;
 
-    div {
+    .ancho {
+        width: 80%;
+        height: 100px;
+        margin: auto;
         display: flex;
-    }
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: map-get($estilos, FontF);
 
-    nav {
-        width: 450px;
-        height: 70px;
-        padding-top: 30px;
-        text-align: right;
-        margin-left: auto;
+        .logo {
+            width: 280px;
+            padding-top: 20px;
+            box-sizing: border-box;
+            justify-self: flex-start;
+            display: block;
 
-        ul li {
-            display: inline-block;
-
-            a {
-                font-size: 2rem;
-                color: #4b4849;
-                padding-left: 15px;
+            p a {
+                color: red;
+                font-size: 60px;
             }
 
-            &a:hover {
-                color: aquamarine;
+            .fuenteVerde {
+                color: rgb(14, 212, 14);
+                justify-self: flex-start;
+                height: 10px;
+                margin-left: 10px;
+            }
+        }
+
+        .nav-bar {
+            width: 450px;
+            height: 70px;
+            padding-top: 30px;
+            text-align: right;
+            margin-left: auto;
+
+            .alineados {
+
+                .ocultoParaPc {
+                    display: none;
+                }
+
+                .ocultoParaCelular {
+                    .btn {
+                        background: #fff;
+                        color: #4b4849;
+                        box-shadow: none;
+                        font-size: 1.7rem;
+                        border-color: #4b4849;
+
+                        &:hover {
+                            color: red;
+                        }
+                    }
+
+                    .offcanvas-header {
+                        display: block;
+                    }
+
+                    li {
+                        display: block;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 20px auto 20px auto;
+
+                        a {
+                            font-size: 2rem;
+                            color: #4b4849;
+
+                            &:hover {
+                                color: red;
+                            }
+                        }
+
+                    }
+                }
             }
         }
     }
 }
 
-
-.ancho {
-    width: 80%;
-    height: 100px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: map-get($estilos, FontF);
-}
-
-.logo {
-    width: 280px;
-    padding-top: 20px;
-    box-sizing: border-box;
-    justify-self: flex-start;
-    display: block;
-
-    p a {
-        color: red;
-        font-size: 60px;
-    }
-}
-
-.ocultoParaPC {
-    display: none;
-}
-
-.btn {
-    display: none;
-}
-
-.fuenteVerde {
-    color: rgb(14, 212, 14);
-    justify-self: flex-start;
-    height: 10px;
-    margin-left: 10px;
-}
-
-.alineados {
-    flex-direction: row;
-    justify-content: center;
-}
 
 ol,
 ul {
