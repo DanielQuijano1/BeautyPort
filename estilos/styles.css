@@ -219,9 +219,9 @@ header {
       header .ancho .nav-bar .alineados .ocultoParaCelular .btn {
         background: #fff;
         color: #4b4849;
-        box-shadow: none;
+        box-shadow: rgba(0, 0, 0, 0.15) 0.5px 0.5px 5px;
         font-size: 1.7rem;
-        border-color: #4b4849; }
+        border-color: white; }
         header .ancho .nav-bar .alineados .ocultoParaCelular .btn:hover {
           color: red; }
       header .ancho .nav-bar .alineados .ocultoParaCelular .offcanvas-header {
